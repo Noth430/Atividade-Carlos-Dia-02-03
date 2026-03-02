@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Hotel Travel</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body class="Corpo">
     <h1 class="Titulo">Hotel Travel - Contato</h1>
@@ -14,6 +14,7 @@
         <button><a href="reserva.html" class="Link">Faça sua reserva</a></button>
         <button><a href="sobre.html" class="Link">Sobre nós</a></button>
         <button><a href="servicos.html" class="Link">Serviços</a></button>
+        <button id="theme-toggle">🌙</button>
     </nav>
 
     <p class="Paragrafo">
@@ -44,5 +45,19 @@
         
         <button type="submit">Enviar Mensagem</button>
     </form>
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        function updateIcon() {
+            toggle.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
+        }
+        toggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+            updateIcon();
+        });
+        if (localStorage.getItem('theme') === 'dark') body.classList.add('dark');
+        updateIcon();
+    </script>
 </body>
 </html>
