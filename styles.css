@@ -183,15 +183,6 @@ ul {
     --card-bg: #fff;
 }
 
-/* apply dark theme when body has .dark or user prefers dark */
-body.dark,
-@media (prefers-color-scheme: dark) body {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --primary-color: #bb86fc;
-    --primary-hover: #985eff;
-    --card-bg: #1e1e1e;
-}
 
 nav button {
     background-color: var(--primary-color);
