@@ -3,48 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas - Hotel Travel</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Contato - Hotel Travel</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="Corpo">
-    <h1 class="Titulo">Hotel Travel - Reservas</h1>
+    <h1 class="Titulo">Hotel Travel - Contato</h1>
     
     <nav>
         <button><a href="index.html" class="Link">Início</a></button>
-        <button><a href="contato.html" class="Link">Contato</a></button>
+        <button><a href="reserva.html" class="Link">Faça sua reserva</a></button>
         <button><a href="sobre.html" class="Link">Sobre nós</a></button>
         <button><a href="servicos.html" class="Link">Serviços</a></button>
         <button id="theme-toggle">🌙</button>
     </nav>
 
     <p class="Paragrafo">
-        Faça sua reserva conosco e aproveite os melhores preços e promoções exclusivas. Nossa plataforma de reservas permite que você escolha entre diferentes tipos de quartos, períodos e serviços adicionais para personalizar sua experiência.
+        Entre em contato conosco para dúvidas, sugestões ou informações adicionais. Nossa equipe está sempre pronta para ajudar e oferecer o melhor atendimento possível.
     </p>
 
-    <h2>Formulário de Reserva</h2>
+    <h2>Informações de Contato</h2>
+    <p>
+        <strong>Telefone:</strong> (71)3456-7890<br>
+        <strong>E-mail:</strong> contato@hoteltravel.com.br<br>
+        <strong>Endereço:</strong> Av. Principal, 1000 - Centro, Salvador - BA<br>
+        <strong>Horário de Atendimento:</strong> Segunda a Domingo, 24 horas
+    </p>
+
+    <h2>Envie-nos uma Mensagem</h2>
     <form>
-        <label for="nome">Nome Completo:</label>
+        <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
         
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
         
-        <label for="data-entrada">Data de Entrada:</label>
-        <input type="date" id="data-entrada" name="data-entrada" required>
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required>
         
-        <label for="data-saida">Data de Saída:</label>
-        <input type="date" id="data-saida" name="data-saida" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
         
-        <label for="quarto">Tipo de Quarto:</label>
-        <select id="quarto" name="quarto" required>
-            <option value="">Selecione um quarto</option>
-            <option value="simples">Quarto Simples</option>
-            <option value="duplo">Quarto Duplo</option>
-            <option value="suite">Suíte Executiva</option>
-            <option value="cobertura">Suíte Cobertura</option>
-        </select>
-        
-        <button type="submit">Confirmar Reserva</button>
+        <button type="submit">Enviar Mensagem</button>
     </form>
     <script>
         const toggle = document.getElementById('theme-toggle');
