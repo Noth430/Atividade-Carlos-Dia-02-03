@@ -14,7 +14,6 @@
         <button><a href="reserva.html" class="Link">Faça sua reserva</a></button>
         <button><a href="contato.html" class="Link">Contato</a></button>
         <button><a href="servicos.html" class="Link">Serviços</a></button>
-        <button id="theme-toggle">🌙</button>
     </nav>
 
     <h2>Nossa História</h2>
@@ -29,21 +28,6 @@
 
     <h2>Nossos Valores</h2>
     <ul>
-
-    <script>
-        const toggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        function updateIcon() {
-            toggle.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
-        }
-        toggle.addEventListener('click', () => {
-            body.classList.toggle('dark');
-            localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
-            updateIcon();
-        });
-        if (localStorage.getItem('theme') === 'dark') body.classList.add('dark');
-        updateIcon();
-    </script>
         <li>Excelência no Atendimento</li>
         <li>Qualidade e Conforto</li>
         <li>Integridade e Honestidade</li>
@@ -55,5 +39,6 @@
     <p class="Paragrafo">
         Com localização privilegiada, estrutura moderna, equipe treinada e comprometida, e uma variedade de serviços de qualidade, o Hotel Travel é a escolha perfeita para sua próxima viagem. Aqui você encontra mais que hospedagem; encontra uma experiência de luxo e aconchego.
     </p>
+    <script src="./script.js"></script>
 </body>
 </html>

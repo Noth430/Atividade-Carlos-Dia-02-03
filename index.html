@@ -20,9 +20,27 @@
         Bem-vindo ao Hotel Travel, onde o conforto e a hospitalidade se encontram para criar uma experiência inesquecível. Localizado no coração de uma cidade vibrante, nosso hotel oferece acomodações luxuosas, serviços excepcionais e uma atmosfera acolhedora para garantir que sua estadia seja perfeita. Seja para negócios ou lazer, o Hotel Travel é o destino ideal para quem busca qualidade e conveniência em um ambiente sofisticado.
     </p>
     
-    <div class="Imagem">
-        <img src="/fotos/unnamed.png">
-        <img src="" alt="">
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-items">
+                <div class="carousel-item active">
+                    <img src="/fotos/unnamed.png" alt="Hotel 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/fotos/Gemini_Generated_Image_ncc8vkncc8vkncc8 (1).png" alt="Hotel 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/fotos/Gemini_Generated_Image_w62q3iw62q3iw62q.png" alt="Hotel 3">
+                </div>
+            </div>
+            <button class="carousel-btn carousel-prev" onclick="previousSlide()">&#10094;</button>
+            <button class="carousel-btn carousel-next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
     </div>
 
     <div class="redes-sociais">
@@ -36,5 +54,6 @@
             <img src="/fotos/whatsapp.png" alt="WhatsApp" class="social-icon">
         </a>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

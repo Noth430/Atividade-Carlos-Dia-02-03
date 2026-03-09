@@ -14,7 +14,6 @@
         <button><a href="reserva.html" class="Link">Faça sua reserva</a></button>
         <button><a href="contato.html" class="Link">Contato</a></button>
         <button><a href="sobre.html" class="Link">Sobre nós</a></button>
-        <button id="theme-toggle">🌙</button>
     </nav>
 
     <p class="Paragrafo">
@@ -62,19 +61,6 @@
         <h3>Estacionamento</h3>
         <p>Estacionamento seguro e coberto, com acesso fácil ao hotel.</p>
     </div>
-    <script>
-        const toggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        function updateIcon() {
-            toggle.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
-        }
-        toggle.addEventListener('click', () => {
-            body.classList.toggle('dark');
-            localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
-            updateIcon();
-        });
-        if (localStorage.getItem('theme') === 'dark') body.classList.add('dark');
-        updateIcon();
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
